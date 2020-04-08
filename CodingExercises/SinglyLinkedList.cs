@@ -35,7 +35,8 @@ namespace CodingExercises
         {
             if (first == null || second == null) return null;
             if (first == second) return first;
-
+            if (Cycle(first) || Cycle(second)) return null;
+            
             int lengthFirst = 1, lengthSecond = 1;
             Node firstCounter = first, secondCounter = second;
 

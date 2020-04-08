@@ -42,5 +42,16 @@ namespace CodingExercisesTests
 
             Assert.Equal(middleNodeOfA, result);
         }
+
+        [Fact]
+        public void TestIntersectionWithCyclePresent_ReturnsNull() {
+            Node validNode = new Node(5);
+            Node cycleNode = new Node(1, new List<int>() {8, 4, 5, 9});
+            cycleNode.next.next.next.next.next = cycleNode.next;
+
+            Node result = SinglyLinkedList.Intersection(validNode, cycleNode);
+
+            Assert.Null(result);
+        }
     }
 }
