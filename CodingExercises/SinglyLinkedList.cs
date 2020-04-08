@@ -20,7 +20,15 @@ namespace CodingExercises
 
         public static bool Cycle(Node root)
         {
-            throw new NotImplementedException();
+            if (root == null || root.next == null) return false;
+            Node fastPointer = root.next, slowPointer = root;
+            while(fastPointer != null && slowPointer != null) {
+                if (fastPointer == slowPointer) return true;
+                if (fastPointer.next == null || fastPointer.next.next == null) return false;
+                fastPointer = fastPointer.next.next;
+                slowPointer = slowPointer.next;
+            }
+            return false;
         }
 
         public static Node Intersection(Node first, Node second)
