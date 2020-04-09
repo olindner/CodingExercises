@@ -1,7 +1,7 @@
 # CodingExercises
 A repo for testing functions, tests, design patterns, and algorithms in C#.
 
-# "CodingExercises"
+# /CodingExercises
 Folder containing classes for individual programming exercises and experiments.
 
 - Reversing a Singly-Linked-List
@@ -13,5 +13,5 @@ Folder containing classes for individual programming exercises and experiments.
 - Checking if a Binary Tree is a BST
 - Longest Substring with K Unique Characters
 "
-# "CodingExercisesTests"
+# /CodingExercisesTests
 Folder containing unit tests for the above using Xunit.
