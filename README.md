@@ -13,5 +13,5 @@ Folder containing classes for individual programming exercises and experiments.
 - Checking if a Binary Tree is a BST
 - Longest Substring with K Unique Characters
 "
-# "CodingExercisesTest"
+# "CodingExercisesTests"
 Folder containing unit tests for the above using Xunit.
